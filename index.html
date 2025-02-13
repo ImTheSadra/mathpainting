@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Painting</title>
+    <title>Math Painting - Draw Math Functions Online</title>
+    <meta name="description"
+        content="A simple web app to visualize and draw math formulas on a canvas. Created by Sadra.">
+
+    <meta property="og:title" content="Math Painting - Draw Math Functions Online">
+    <meta property="og:description" content="A simple web app to visualize and draw math functions on a canvas.">
+    <meta property="og:url" content="https://imthesadra.github.io/mathpainting">
+
+    <meta name="twitter:title" content="Math Painting - Draw Math Formulas">
+    <meta name="twitter:description" content="A fun math visualization app to plot equations like y = 3x + 2.">
+    
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body class="w-screen h-screen" style="background-color: rgb(51, 51, 51);">
     <div style="z-index: 2; position: absolute;left: 0px;top: 0px;" class="w-screen h-screen p-6">
         <div class="flex flex-row">
             <div class="bg-indigo-600 rounded-l-md shadow-l-md p-3">y = </div>
-            <input id="formula" type="text"
-                class="p-3 bg-indigo-600 rounded-r-md shadow-r-md"
+            <input id="formula" type="text" class="p-3 bg-indigo-600 rounded-r-md shadow-r-md"
                 placeholder="Enter formula (e.g., 3 * x + 2)">
         </div>
         <div class="flex flex-row">
@@ -22,7 +33,8 @@
         <button id="draw" class="bg-indigo-600 rounded-md shadow-md p-3">draw</button>
         <button id="clear" class="bg-indigo-600 rounded-md shadow-md p-3">clear</button>
     </div>
-    <div id="hbd" style="right: 30px; bottom: 30px; position: absolute;" class="font-semibold rounded-md shadow-md bg-indigo-600 bg-opacity-25 p-3">
+    <div id="hbd" style="right: 30px; bottom: 30px; position: absolute;"
+        class="font-semibold rounded-md shadow-md bg-indigo-600 bg-opacity-25 p-3">
         <p>for my friends birthday... 🎂🎉</p>
         <p>happy birthday Little Sun (brown eyes)</p>
         <p>26 of Bahman :)</p>
@@ -32,4 +44,5 @@
     <script src="./tailwind.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
