@@ -75,14 +75,14 @@ function drawFormula(formula) {
 
     let prevX, prevY;
 
+    stroke(document.getElementById("color").value);
+
     for (let i = 0; i < cw; i++) {
         let x = (i - centerX) / scale;
         let y = func(x);
         let j = centerY - (y * scale);
 
-        if (i > 0) {
-            line(prevX, prevY, i, j);
-        }
+        if (i > 0) {line(prevX, prevY, i, j);}
 
         prevX = i;
         prevY = j;
