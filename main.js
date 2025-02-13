@@ -55,19 +55,16 @@ function draw() {
     line(cw / 2, 0, cw / 2, ch);
     line(0, ch / 2, cw, ch / 2);
     text("(0,0)", cw / 2, ch / 2);
-    // translate(cw/2, ch/2);
     noLoop();
 }
 
 document.getElementById("clear").addEventListener("click", () => {
-    // translate(0, 0);
     draw();
-    // translate(cw/2, ch/2);
-})
+});
 
 function drawFormula(formula) {
     lformula = formula;
-    formula = formula.lower();
+    formula = formula.toLowerCase();
     formula.replace("cos", "Math.cos");
     formula.replace("sin", "Math.sin");
     formula.replace("tan", "Math.tan");
@@ -79,17 +76,13 @@ function drawFormula(formula) {
     let prevX, prevY;
 
     for (let i = 0; i < cw; i++) {
-        let x = (i - centerX) / scale; // Convert pixel to graph coordinates
-        let y = func(x); // Get function value
-        let j = centerY - (y * scale); // Convert graph y to pixel y
+        let x = (i - centerX) / scale;
+        let y = func(x);
+        let j = centerY - (y * scale);
 
         if (i > 0) {
             line(prevX, prevY, i, j);
         }
-
-        // if (Math.round(y) == 0){
-        //     text("("+x.toString()+","+y.toString()+")", i,j);
-        // }
 
         prevX = i;
         prevY = j;
