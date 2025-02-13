@@ -67,6 +67,7 @@ document.getElementById("clear").addEventListener("click", () => {
 
 function drawFormula(formula) {
     lformula = formula;
+    formula = formula.lower();
     formula.replace("cos", "Math.cos");
     formula.replace("sin", "Math.sin");
     formula.replace("tan", "Math.tan");
