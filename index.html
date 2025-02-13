@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Painting</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="w-screen h-screen" style="background-color: rgb(51, 51, 51);">
+    <div style="z-index: 2; position: absolute;left: 0px;top: 0px;" class="w-screen h-screen p-6">
+        <div class="flex flex-row">
+            <div class="bg-indigo-600 rounded-l-md shadow-l-md p-3">y = </div>
+            <input id="formula" type="text"
+                class="p-3 bg-indigo-600 rounded-r-md shadow-r-md"
+                placeholder="Enter formula (e.g., 3 * x + 2)">
+        </div>
+        <div class="flex flex-row">
+            <label for="scale" class="p-3">scale </label>
+            <input type="range" id="scale" min="1" max="400" value="100" class="p-3">
+        </div>
+        <!-- <label for="formula">write the formula to draw it (x and y like y=ax+b)</label> -->
+        <button id="draw" class="bg-indigo-600 rounded-md shadow-md p-3">draw</button>
+        <button id="clear" class="bg-indigo-600 rounded-md shadow-md p-3">clear</button>
+    </div>
+
+    <script src="./p5.js"></script>
+    <script src="./tailwind.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
