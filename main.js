@@ -45,7 +45,7 @@ function isBahman25Or26() {
     let today = new Date();
     let { jm, jd } = g2j(today.getFullYear(), today.getMonth() + 1, today.getDate());
 
-    return jm === 11 && (jd === 25 || jd === 26);
+    return jm === 11 && (jd == 25 || jd == 26 || jd == 27);
 }
 
 function draw() {
