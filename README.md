@@ -14,7 +14,7 @@ A simple web app to draw mathematical line formulas on a canvas.
 3. Click "Draw" to visualize the function.
 
 ## Live Demo
-🔗 [Try it here](https://sadra.github.io/mathpainting/)
+🔗 [Try it here](https://imthesadra.github.io/mathpainting/)
 
 ## Author
 👨‍💻 **Sadra**  
